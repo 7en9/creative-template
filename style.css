@@ -15,6 +15,7 @@
     ),
     url(img/layer_15_555.png) 100%;
   padding: 30px 360px 30px 360px;
+  background-repeat: round;
 }
 
 .menu-panel {
@@ -100,6 +101,13 @@
   font-size: 14px;
   cursor: pointer;
   margin-bottom: 125px;
+  transition: 1s;
+}
+
+.moreBtn:hover {
+  color: rgba(243, 129, 129, 0.89);
+  border-color: rgba(243, 129, 129, 0.89);
+  opacity: 0.65;
 }
 
 .info-line {
@@ -178,6 +186,7 @@
   font-size: 15px;
   color: #999;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .img-container {
@@ -225,10 +234,12 @@
   padding-bottom: 50px;
   margin-bottom: 40px;
   gap: 5px;
+  justify-content: center;
 }
 
 .infoForm-bottom {
   gap: 5px;
+  justify-content: center;
 }
 
 .infoForm-box {
@@ -255,6 +266,7 @@
 .designBrick {
   background: url(img/rectangle_21_928.png);
   height: 850px;
+  background-repeat: round;
 }
 
 .pad100 {
@@ -369,7 +381,7 @@
   margin-right: 60px;
 }
 
-.greuBox-fish {
+.greyBox-fish {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   color: #999;
@@ -418,6 +430,10 @@
   line-height: 0;
 }
 
+.gradient:hover {
+  transform: translate(-10px -10px);
+}
+
 .gradient:after {
   content: "";
   opacity: 0;
@@ -439,6 +455,31 @@
     rgba(243, 129, 129, 0.89) 100%
   );
   opacity: 0.8;
+}
+
+.hover-block {
+  display: none;
+  background: #fce38a;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+}
+
+.gradient:hover .hover-block {
+  display: flex;
+}
+
+.hover-block-img {
+  padding: 15px;
+  border-left: 1px solid #f38181;
+  border-collapse: collapse;
+}
+
+.red-bg {
+  background: #f38181;
 }
 
 .teamBrick-txt {
@@ -497,6 +538,7 @@
 .clientsBlock {
   background: url(img/clients_bg.png);
   padding: 90px 360px;
+  background-repeat: round;
 }
 
 .client-box {
@@ -527,6 +569,7 @@
 
 .client-box .fish {
   margin-bottom: 0;
+  text-align: initial;
 }
 
 /*---------------LATESTBLOCK-----------------------------*/
@@ -557,6 +600,10 @@
 .latestBox {
   position: relative;
   max-width: 380px;
+}
+
+.latestBox .fish {
+  text-align: none;
 }
 
 .latestBox img {
@@ -611,6 +658,7 @@
   align-items: center;
   flex-direction: column;
   padding: 55px 0;
+  background-repeat: round;
 }
 
 .mapBlock img {
@@ -638,6 +686,7 @@
   display: flex;
   justify-content: center;
   gap: 25px;
+  background-color: #f8f8f8;
 }
 
 .footer-mogo {
