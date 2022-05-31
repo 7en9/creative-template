@@ -1,0 +1,28 @@
+.mogo-menuBlock img {
+  width: 15%;
+}
+
+.mogo-menuBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.media-list {
+  display: none;
+  gap: 5px;
+}
+
+.medialist-link {
+  color: #fff;
+}
+
+.medialist-link:hover {
+  color: #000;
+}
+
+@media (max-width: 495px) {
+  .mogo-media-container:hover .media-list {
+    display: flex;
+  }
+}
