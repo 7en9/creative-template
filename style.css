@@ -747,12 +747,18 @@
 /*---------------FOOTER-----------------------------*/
 
 .footer {
-  padding: 65px 360px;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 65px 360px 25px;
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  gap: 25px;
   background-color: #f8f8f8;
+}
+
+.borderBlock {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  gap: 25px;
+  padding-bottom: 65px;
 }
 
 .footer-mogo {
@@ -846,6 +852,7 @@
 .blogBox {
   display: flex;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .blogBox:last-child {
@@ -901,7 +908,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .laaquiq {
